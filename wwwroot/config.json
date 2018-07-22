@@ -46,21 +46,23 @@
         brandBarElements: [
             "",
             "<a target=\"_blank\" href=\"http://www.nicta.com.au\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
-            ""
+            "<a target=\"_blank\" href=\"https://www.europeana.eu/portal/en\"><img src=\"images/EuropeanaLogo.png\" height=\"52\" title=\"Europeana\" /></a>",""
         ],
         // Shown when things go wrong.
-        supportEmail: "help@example.com",
+        supportEmail: "j.castanheira@campus.fct.unl.pt",
         // You probably shouldn't change this.
         proj4ServiceBaseUrl: "proj4def/",
         // Or this
-        feedbackUrl: "feedback",
+        //feedbackUrl: "feedback",
 
         // Default mobile viewer mode when loading the map for the first time on mobile platforms.
         // Options are: "3DTerrain", "3DSmooth", "2D"
         mobileDefaultViewerMode: "2d",
         // Enable experimental features, since its nice to have the bleeding edge.
         // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
-        "experimentalFeatures": true
+        "experimentalFeatures": true,
+        "tabbedCatalog": false,
+        "disableSplitter": true
     }
 }
 

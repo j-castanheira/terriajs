@@ -25,7 +25,7 @@ export default function UserInterface(props) {
     return (
         <StandardUserInterface {... props} version={version}>
             <Menu>
-                <RelatedMaps viewState={props.viewState} />
+                {/*<RelatedMaps viewState={props.viewState} />*/}
                 <MenuItem caption="About" href="about.html" key="about-link"/>
             </Menu>
             <Nav>

@@ -1,16 +1,91 @@
 {
   "homeCamera": {
-    "north": -8,
-    "east": 158,
-    "south": -45,
-    "west": 109
+    "west":-79.24513315514591,"south":-21.235899126362227,"east":31.821452924507163,"north":30.603932114177002,
+    "position": {
+      "x":18673363.896494318,"y":-8201636.506077089,"z":2720318.489464542
+    },
+    "direction": {
+      "x":-0.9075809867223087,"y":0.3986239112664959,"z":-0.1318928728429308
+    },
+    "up": {
+      "x":-0.1207584120637634,"y":0.053039002843189166,"z":0.9912639759888576
+    }
   },
   "catalog": [
+
     {
-      "name": "Example Datasets",
+      "name": "Europeana Examples Datasets",
       "type": "group",
       "preserveOrder": true,
       "isOpen": true,
+      "items": [
+        {
+          "name": "3D Examples Datasets",
+          "type": "group",
+          "preserveOrder": true,
+          "isOpen": false,
+          "items": []
+        },
+        {
+          "name": "Austria Monuments",
+          "type": "csv",
+          "url": "test/austriaEuropeana.csv",
+
+          "featureInfoTemplate": {
+            "template": "<div class='abc'><small>{{Date}}</small>{{#Images}}<figure><img src='{{Images}}'/><figcaption>{{Description}}</figcaption></figure>{{/Images}}<p><a target='_blank' href={{SourcePage}}>Original page</a></div>"
+          },
+          "tableStyle": {
+            "dataVariable": "Title",
+            "colorMap": "green-orange"
+          },
+          "zoomOnEnable": true
+        },
+        {
+          "name": "Newgrange Search",
+          "type": "csv",
+          "url": "test/newgrangeEuropeana.csv",
+          "featureInfoTemplate": {
+            "template": "<div class='abc'><small>{{Date}}</small>{{#Images}}<figure><img src='{{Images}}'/><figcaption>{{Description}}</figcaption></figure>{{/Images}}<p><a target='_blank' href={{SourcePage}}>Original page</a></div>"
+          },
+          "tableStyle": {
+            "dataVariable": "Title",
+            "colorMap": "green-orange"
+          },
+          "zoomOnEnable": true
+        },
+        {
+          "name": "Lisbon Platform Search",
+          "type": "csv",
+          "url": "test/lisbon.csv",
+          "featureInfoTemplate": {
+            "template": "<div class='abc'><small>{{Date}}</small>{{#Primary image}}<figure><img src='{{Primary image}}'/><figcaption>{{Primary image caption}}</figcaption></figure>{{/Primary image}}<p><a target='_blank' href={{URL}}>Read More</a></div>"
+          },
+          "tableStyle": {
+            "dataVariable": "dcTitle",
+            "colorMap": "green-orange"
+          },
+          "zoomOnEnable": true
+        },
+        {
+          "name": "Europeana Search",
+          "type": "terria-json",
+          "url": "https://www.europeana.eu/api/v2/search.json?wskey=MmvpGKssS",
+          "inputs": [
+            {
+              "id": "query",
+              "type": "string",
+              "name": "Search terms",
+              "description": "Use any terms to find objects."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Terria Example Datasets",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": false,
       "items": [
         {
           "name": "ABC News Stories",
@@ -57,7 +132,7 @@
                 144.354,
                 -38.147,
                 144.358,
-                -38.150
+                -38.15
               ]
             },
             {
@@ -70,7 +145,7 @@
                 144.354,
                 -38.147,
                 144.358,
-                -38.150
+                -38.15
               ]
             }
           ]
@@ -247,7 +322,7 @@
           "dataCustodian": "[Australian Bureau of Statistics](http://www.abs.gov.au/)",
           "rectangle": [
             112.93529,
-            -38.20880,
+            -38.2088,
             152.06206,
             -11.05104
           ],
@@ -262,5 +337,6 @@
         }
       ]
     }
+
   ]
 }
