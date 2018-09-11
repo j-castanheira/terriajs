@@ -28,13 +28,18 @@
         },
         {
           "name": "Austria Monuments",
-          "type": "object-csv",
+          "type": "csv",
           "url": "test/austriaEuropeana.csv",
 
           "featureInfoTemplate": {
             "template": "<div class='abc'><small>{{Date}}</small>{{#Images}}<figure><img src='{{Images}}'/><figcaption>{{Description}}</figcaption></figure>{{/Images}}<p><a target='_blank' href={{SourcePage}}>Original page</a></div>"
           },
           "tableStyle": {
+            "columns": {
+              "ID": {
+                "type": "hidden"
+              }
+            },
             "dataVariable": "Title",
             "colorMap": "green-orange"
           },
@@ -42,7 +47,7 @@
         },
         {
           "name": "Newgrange Search",
-          "type": "object-csv",
+          "type": "csv",
           "url": "test/newgrangeEuropeana.csv",
           "featureInfoTemplate": {
             "template": "<div class='abc'><small>{{Date}}</small>{{#Images}}<figure><img src='{{Images}}'/><figcaption>{{Description}}</figcaption></figure>{{/Images}}<p><a target='_blank' href={{SourcePage}}>Original page</a></div>"
@@ -55,7 +60,7 @@
         },
         {
           "name": "Lisbon Platform Search",
-          "type": "object-csv",
+          "type": "csv",
           "url": "test/lisbon.csv",
           "featureInfoTemplate": {
             "template": "<div class='abc'><small>{{Date}}</small>{{#Primary image}}<figure><img src='{{Primary image}}'/><figcaption>{{Primary image caption}}</figcaption></figure>{{/Primary image}}<p><a target='_blank' href={{URL}}>Read More</a></div>"
@@ -68,7 +73,7 @@
         },
         {
           "name": "Europeana Search",
-          "type": "europeana-json",
+          "type": "cho-json",
           "url": "https://www.europeana.eu/api/v2/search.json?wskey=MmvpGKssS",
           "inputs": [
             {
